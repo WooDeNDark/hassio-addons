@@ -9,7 +9,8 @@ COPY rootfs /
 RUN apk add --no-cache \
     python3 \
     py3-watchdog \
-    py3-requests
+    py3-requests \
+    py3-pip
 
 RUN pip3 install boto3
 
