@@ -31,5 +31,6 @@ export monitor_path="/backup"
 
 echo "Я работаю"
 echo "$AWS_ACCESS_KEY_ID"
+echo "$AWS_SECRET_ACCESS_KEY"
 
 exec python3 -u /usr/bin/amazon-s3-backup/amazon-s3-backup.py >&2
