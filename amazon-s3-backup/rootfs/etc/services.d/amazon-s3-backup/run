@@ -29,4 +29,6 @@ export keep_local_snapshots
 
 export monitor_path="/backup"
 
+echo "Я работаю"
+
 exec python3 -u /usr/bin/amazon-s3-backup/amazon-s3-backup.py >&2
