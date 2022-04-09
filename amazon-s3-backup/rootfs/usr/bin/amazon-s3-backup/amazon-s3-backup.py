@@ -163,7 +163,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     s3_bucket = S3Bucket(config.bucket_name,
-                         config.bucket_region, config.storage_class)
+                         config.bucket_region, config.storage_class, config.endpoint_url)
 
     supervisor_api = SupervisorAPI(os.getenv("SUPERVISOR_TOKEN"))
 
