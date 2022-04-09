@@ -24,6 +24,7 @@ class Config:
     def __init__(self):
         self.bucket_name = os.getenv("bucket_name")
         self.bucket_region = os.getenv("bucket_region")
+        self.endpoint_url = os.getenv("endpoint_url")
         self.storage_class = os.getenv(
             "storage_class", Config.DEFAULT_STORAGE_CLASS)
         self.upload_missing_files = True if os.getenv(

@@ -10,7 +10,7 @@ class S3BucketError(Exception):
 
 
 class S3Bucket:
-    def __init__(self, bucket_name: str, bucket_region: str, storage_class: str):
+    def __init__(self, bucket_name: str, bucket_region: str, storage_class: str, endpoint_url: str):
         """Class representing an S3 bucket
 
         Args:
@@ -22,6 +22,7 @@ class S3Bucket:
         self.storage_class = storage_class
 
         aws_config = {
+            "endpoint_url": endpoint_url,
             "region_name": bucket_region
         }
         logger.debug("Creating S3 client")

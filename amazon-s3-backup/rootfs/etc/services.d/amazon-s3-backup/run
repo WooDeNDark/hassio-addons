@@ -18,6 +18,9 @@ export bucket_name
 bucket_region="$(bashio::config 'bucket_region')"
 export bucket_region
 
+endpoint_url="$(bashio::config 'endpoint_url')"
+export endpoint_url
+
 storage_class="$(bashio::config 'storage_class')"
 export storage_class
 
